@@ -1,0 +1,56 @@
+---
+title: "Arabica Coffee Quality Storyboard"
+bibliography: CoffeeCitations.bib
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Sidebar {.sidebar}
+
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
+
+The GitHub repository this dashboard was constructed with can be found at:
+
+## Column {.tabset .tabset-fade}
+
+
+### Grow Altitudes
+
+```{r}
+readRDS("barplotaltitude.rds")
+```
+
+
+### Total Cup Points Distribution
+
+```{r}
+readRDS("cuppointshistogram.rds")
+```
+
+### Total Cup Points by Altitude
+
+```{r}
+readRDS("violinplotaltitude.rds")
+```
+
+
+### Map of Coffee Lot Origins
+
+```{r}
+readRDS("lotsmap.rds")
+```
+
+
+### References 
+
+B., Fatih. “Coffee Quality Data (CQI May-2023),” n.d. https://www.kaggle.com/datasets/fatihb/coffee-quality-data-cqi.
+
+“Coffee Quality Institute,” April 23, 2024. https://www.coffeeinstitute.org/.
+
+Wickham, Hadley. Ggplot2: Elegant Graphics for Data Analysis. 2nd ed. 2016. Use R! Cham: Springer International Publishing : Imprint: Springer, 2016. https://doi.org/10.1007/978-3-319-24277-4.
+
+Wickham, Hadley, Mara Averick, Jennifer Bryan, Winston Chang, Lucy McGowan, Romain François, Garrett Grolemund, et al. “Welcome to the Tidyverse.” Journal of Open Source Software 4, no. 43 (November 21, 2019): 1686. https://doi.org/10.21105/joss.01686.
