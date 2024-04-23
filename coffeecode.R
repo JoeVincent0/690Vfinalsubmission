@@ -49,7 +49,7 @@ mins <- coffee %>% group_by(Altitude_cat) %>% summarise(min = round(min(`Total C
 violinplotaltitude <- coffee %>% filter(Altitude_cat != 'NA') %>%
   ggplot(aes(y = `Total Cup Points`, x = `Altitude_cat`)) + 
   geom_violin(col = "chocolate4", fill = "burlywood4", alpha = 0.6) +
-  geom_text(data = meds, aes(x = `Altitude_cat`, y = `median`, label = paste0('Median = ',`median`)), col = 'white', size = 4, vjust = .5, hjust = .5) +
+  geom_text(data = meds, aes(x = `Altitude_cat`, y = `median`, label = paste0('Median = ',`median`)), col = 'white', size = 3, vjust = .5, hjust = .5) +
   geom_label(data = maxs, aes(x = `Altitude_cat`, y = `max`, label = paste0('Max = ',`max`)), col = 'black', size = 3, vjust = .5, hjust = -.2) +
   geom_label(data = mins, aes(x = `Altitude_cat`, y = `min`, label = paste0('Min = ', `min`)), col = 'black', size = 3, vjust = .5, hjust = 1.2) +
   scale_y_continuous(limits = c(75,92)) +

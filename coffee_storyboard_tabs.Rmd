@@ -13,7 +13,7 @@ library(flexdashboard) # always
 
 Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
 
-The GitHub repository this dashboard was constructed with can be found at:
+The GitHub repository this dashboard was constructed with can be found at: https://github.com/JoeVincent0/690Vfinalsubmission
 
 ## Column {.tabset .tabset-fade}
 
